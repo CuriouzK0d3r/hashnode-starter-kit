@@ -32,11 +32,11 @@ export const Footer = () => {
 							</p>
 							<ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300">
 								<li>
-									<a href="#" className="hover:underline">
-										Contact us
+									<a href="mailto:contact@kornilakis.com" className="hover:underline">
+										Contact me
 									</a>
 								</li>
-								<li>
+								{/* <li>
 									<a href="#" className="hover:underline">
 										Book a demo
 									</a>
@@ -50,10 +50,10 @@ export const Footer = () => {
 									<a href="#" className="hover:underline">
 										Slack
 									</a>
-								</li>
+								</li> */}
 							</ul>
 						</div>
-						<div className="col-span-full md:col-span-2 lg:col-span-1">
+						{/* <div className="col-span-full md:col-span-2 lg:col-span-1">
 							<p className="mb-2 font-semibold text-slate-600 dark:text-neutral-200">Resources</p>
 							<ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300">
 								<li>
@@ -127,9 +127,9 @@ export const Footer = () => {
 									</a>
 								</li>
 							</ul>
-						</div>
+						</div> */}
 					</div>
-					<div className="col-span-2 flex flex-col items-end gap-5 text-right text-slate-600 dark:text-neutral-300 md:text-left">
+					{/* <div className="col-span-2 flex flex-col items-end gap-5 text-right text-slate-600 dark:text-neutral-300 md:text-left">
 						<SocialLinks />
 						<p>&copy; 2023 Company Inc.</p>
 						<p>
@@ -141,7 +141,7 @@ export const Footer = () => {
 								Terms
 							</a>
 						</p>
-					</div>
+					</div> */}
 				</div>
 			</Container>
 		</footer>
