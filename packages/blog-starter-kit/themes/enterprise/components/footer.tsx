@@ -26,7 +26,7 @@ export const Footer = () => {
 				)} */}
 				<div className="grid w-full grid-cols-3 gap-5 md:grid-cols-6 lg:grid-cols-5">
 					<div className="col-span-1 grid grid-cols-4 gap-5 md:col-span-4 lg:col-span-3">
-						<div className="col-span-full md:col-span-2 lg:col-span-1">
+						<div className="col-span-full">
 							<p className="mb-2 font-semibold text-slate-600 dark:text-neutral-200">
 								Stay in touch
 							</p>
