@@ -126,7 +126,7 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 						<div className="blog-author-card mx-auto px-2 md:px-8">
 							<div className="flex flex-col flex-wrap items-center">
 								<div className="flex w-full flex-col items-center"><div className="flex flex-col items-center leading-snug text-black dark:text-white">
-									<h1 className="blog-author-area-name mb-2 w-full font-heading text-2xl font-extrabold md:text-3xl text-neutral-900">Welcome to Web <span style={{color: "#EA3A7A"}}>Compiled</span> Blog!</h1>
+									<h1 className="blog-author-area-name mb-2 w-full font-heading text-2xl font-extrabold md:text-3xl text-neutral-900 hidden lg:block">Welcome to Web <span style={{color: "#EA3A7A"}}>Compiled</span> Blog!</h1>
 									<div className="blog-follow-wrapper mb-2"><p className="blog-followers-count font-semibold opacity-75"><span></span></p></div></div>
 									<div className="prose text-center dark:prose-dark">
 										<p>Web Development · Programming Languages · ML · Technology</p>
