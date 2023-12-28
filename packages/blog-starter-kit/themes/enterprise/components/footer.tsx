@@ -7,9 +7,9 @@ export const Footer = () => {
 	const { publication } = useAppContext();
 	const PUBLICATION_LOGO = publication.preferences.logo;
 	return (
-		<footer className="border-t py-20 dark:border-neutral-800 ">
+		<footer className="border-t py-12 dark:border-neutral-800 ">
 			<Container className="px-5">
-				{PUBLICATION_LOGO ? (
+				{/* {PUBLICATION_LOGO ? (
 					<div className="mb-20 flex w-full flex-row justify-center">
 						<Link
 							href={'/'}
@@ -23,19 +23,25 @@ export const Footer = () => {
 					<p className="mb-20 text-center text-xl font-semibold text-slate-900 dark:text-slate-50 md:text-4xl">
 						{publication.title}
 					</p>
-				)}
+				)} */}
 				<div className="grid w-full grid-cols-3 gap-5 md:grid-cols-6 lg:grid-cols-5">
 					<div className="col-span-1 grid grid-cols-4 gap-5 md:col-span-4 lg:col-span-3">
 						<div className="col-span-full md:col-span-2 lg:col-span-1">
 							<p className="mb-2 font-semibold text-slate-600 dark:text-neutral-200">
 								Stay in touch
 							</p>
-							<ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300">
+							{/* <hr></hr> */}
+							<ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300 mb-4">
 								<li>
 									<a href="mailto:contact@kornilakis.com" className="hover:underline">
-										Contact me
+										Contact me via e-mail
 									</a>
 								</li>
+								{/* <li>
+									<a href="#" className="hover:underline">
+										Newsletter
+									</a>
+								</li> */}
 								{/* <li>
 									<a href="#" className="hover:underline">
 										Book a demo
@@ -52,6 +58,9 @@ export const Footer = () => {
 									</a>
 								</li> */}
 							</ul>
+							<i>©2023 kornilakis[dot]com</i>
+
+
 						</div>
 						{/* <div className="col-span-full md:col-span-2 lg:col-span-1">
 							<p className="mb-2 font-semibold text-slate-600 dark:text-neutral-200">Resources</p>
