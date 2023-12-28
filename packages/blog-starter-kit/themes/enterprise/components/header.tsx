@@ -15,10 +15,9 @@ function hasUrl(
 }
 
 export const Header = () => {
-	const { publication } = useAppContext();
 	const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || '/';
-	const PUBLICATION_LOGO = publication.preferences.logo;
 	const [isSidebarVisible, setIsSidebarVisible] = useState<boolean>();
+	const { publication } = useAppContext();
 	const navbarItems = publication.preferences.navbarItems.filter(hasUrl);
 	const visibleItems = navbarItems.slice(0, 3);
 	const hiddenItems = navbarItems.slice(3);
@@ -95,7 +94,7 @@ export const Header = () => {
 						)}
 					</div>
 					<div className="hidden lg:block">
-					<img className="block w-40" src={PUBLICATION_LOGO} alt={publication.title} />
+						<PublicationLogo />
 					</div>
 				</div>
 				{/* <div className="col-span-2 flex flex-row items-center justify-end gap-5 text-slate-300 lg:col-span-3">
